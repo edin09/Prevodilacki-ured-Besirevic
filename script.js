@@ -79,11 +79,6 @@ function initializePrivacyPopup() {
         return;
     }
 
-    if (localStorage.getItem('privacyVersion') !== currentPrivacyVersion) {
-        privacyPopup.style.display = 'flex';
-        console.log('Prikazujem privacy-popup jer verzija nije prihvaćena.');
-    }
-
     function openPrivacyPopup() {
         privacyPopup.style.display = 'flex';
         document.querySelector('#privacy-popup .popup-content').scrollTop = 0;
