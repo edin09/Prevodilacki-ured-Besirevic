@@ -1,0 +1,1418 @@
+/* =======================Global Styles======================= */
+ body {
+     font-family: 'Inter', sans-serif;
+     margin: 0;
+     padding: 0;
+     line-height: 1.6;
+     background: #f4f4f9;
+     color: #2c2c2c;
+}
+ a {
+     text-decoration: none;
+     color: #0d6efd;
+     transition: color 0.3s ease;
+}
+ a:hover {
+     color: #084298;
+}
+/* =======================Header======================= */
+ header {
+     background: linear-gradient(90deg, #0073e6, #005bb5);
+     background: #005bb5;
+     padding: 20px 10%;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     position: sticky;
+     top: 0;
+     z-index: 9999;
+}
+ html, body {
+     overflow-x: visible;
+     overflow-y: visible;
+}
+ .image-text {
+     z-index: 1;
+}
+ .header-container {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 5%;
+     max-width: 1300px;
+     margin: 0 auto;
+     gap: 30px;
+}
+ .logo-container {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     flex-shrink: 0;
+}
+ .header_name {
+     font-size: 1.8rem;
+     font-weight: 700;
+     color: #fff;
+     pointer-events: none;
+}
+ .logo-container:hover {
+     background: transparent;
+}
+ .logo {
+     width: 120px;
+     height: auto;
+     margin-right: 10px;
+     transition: transform 0.25s ease-in-out, filter 0.25s ease-in-out;
+     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+ .logo:hover {
+     transform: scale(1.1);
+     filter: drop-shadow(4px 8px 10px rgba(0, 0, 0, 0.5));
+}
+ .logo-container:hover .logo {
+     filter: brightness(1.2);
+}
+ nav {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 15px;
+}
+ nav a {
+     font-weight: 600;
+     font-size: 1rem;
+     color: #fff;
+     padding: 8px 15px;
+     border-radius: 25px;
+     transition: background 0.3s ease, color 0.3s ease;
+}
+ nav a:hover {
+     background: rgba(255, 255, 255, 0.2);
+     color: #fff;
+}
+ .nav-bar {
+     display: flex;
+     gap: 30px;
+     flex-grow: 1;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+/* =======================Main Content======================= */
+ main {
+     padding: 40px 10%;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+ .subtitle {
+     font-size: 2.5rem;
+     font-weight: 600;
+     color: #005bb5;
+     margin: 40px 0 20px 40px;
+     text-align: left;
+}
+ .text {
+     font-size: 1.2rem;
+     line-height: 1.8;
+     color: #333;
+     max-width: 900px;
+     margin: 20px 0px 20px 40px;
+     text-align: left;
+     background: none;
+     border-radius: 0;
+     box-shadow: none;
+     padding: 0;
+}
+ .text:hover {
+     color: #333 !important;
+     background: none !important;
+}
+ .subtitle2 {
+     font-size: 2.5rem;
+     font-weight: 600;
+     color: #005bb5;
+     margin: 0px 40px 20px auto;
+     text-align: left;
+     max-width: 900px;
+}
+ .text2 {
+     font-size: 1.2rem;
+     line-height: 1.8;
+     color: #333;
+     max-width: 900px;
+     margin: 0px 40px 20px auto;
+     text-align: left;
+     background: none;
+     border-radius: 0;
+     box-shadow: none;
+     padding: 0;
+}
+ .text2:hover {
+     color: #333 !important;
+     background: none !important;
+}
+/* =======================Images======================= */
+ .image-container,.image-container-bottom {
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+}
+ .image-container img,.image-container-bottom img {
+     width: 100vw;
+     height: auto;
+     object-fit: cover;
+     display: block;
+     max-height: 600px;
+}
+ .image-container-bottom img {
+     height: 500px;
+}
+ .image-text {
+     position: absolute;
+     top: 50%;
+     left: 70%;
+     transform: translate(-50%, -50%) skewX(-10deg);
+     color: #fff;
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-align: center;
+     padding: 10px 20px;
+     background: rgba(0, 0, 0, 0.5);
+     border-radius: 10px;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/* =======================Social Links======================= */
+ .social-links {
+     display: flex;
+     gap: 15px;
+     justify-content: left;
+     margin: 20px 0px 20px 40px;
+     flex-wrap: wrap;
+}
+ .social-links a {
+     display: flex;
+     align-items: center;
+     font-size: 1rem;
+     font-weight: 600;
+     color: #0d6efd;
+     padding: 10px 15px;
+     border-radius: 25px;
+     background: #f4f4f9;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: background 0.3s ease, color 0.3s ease;
+}
+ .social-links i {
+     margin-right: 8px;
+}
+ .social-links a:hover {
+     color: #fff;
+}
+ .social-links a:nth-child(1):hover {
+     background: #1877f2;
+}
+ .social-links a:nth-child(2):hover {
+     background: #e1306c;
+}
+ .social-links a:nth-child(3):hover {
+     background: #0077b5;
+}
+ .social-links a:nth-child(4):hover {
+     background: #000000;
+}
+/* =======================Footer======================= */
+ footer {
+     background: #2c2c2c;
+     color: #fff;
+     padding: 30px 10%;
+     text-align: center;
+     font-size: 0.9rem;
+     margin-top: 0;
+}
+ footer hr {
+     border: 1px solid #444;
+     margin: 20px 0;
+}
+ footer a {
+     color: #0d6efd;
+     font-weight: 600;
+     margin: 0 8px;
+     transition: color 0.3s ease;
+}
+ footer a:hover {
+     color: #0d6efd;
+}
+/* =======================Hover Effects (General)======================= */
+ h1:hover, h2:hover, h3:hover,h4:hover, h5:hover, h6:hover,p:hover, li:hover {
+     background-color: #f4f4f9;
+     color: #005bb5;
+     transform: scale(1.0);
+     transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+ footer h1:hover, footer h2:hover, footer h3:hover,footer h4:hover, footer h5:hover, footer h6:hover,footer p:hover, footer li:hover {
+     background-color: transparent;
+     color: inherit;
+     transform: none;
+     transition: none;
+}
+/* =======================Working Hours Section======================= */
+ .working-hours {
+     list-style: none;
+     padding: 0;
+     margin: 25px 0 25px 40px;
+     max-width: 420px;
+     background: #f8f9fa;
+     border-radius: 20px;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+     font-size: 1.2rem;
+}
+ .working-hours li {
+     display: flex;
+     justify-content: space-between;
+     padding: 18px 25px;
+     border-bottom: 1px solid #e0e0e0;
+     transition: background 0.4s ease, transform 0.2s ease;
+}
+ .working-hours li:last-child {
+     border-bottom: none;
+}
+ .working-hours li span {
+     font-weight: 600;
+     color: #004d99;
+}
+ .working-hours li:nth-child(3) span {
+     color: #c9302c;
+}
+ .working-hours li:hover {
+     background: #e9ecef;
+     transform: translateY(-2px);
+}
+ .clock-icon {
+     font-size: 2rem;
+}
+/* =======================Embedded iFrame Styling======================= */
+ iframe {
+     border-radius: 15px;
+     padding: 0.75em;
+     width: 100%;
+     max-width: 700px;
+     background: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     display: block;
+     margin: 20px 0px 20px 40px;
+}
+/* =======================Picture Effects======================= */
+ .pictures {
+     transition: transform 0.3s ease-out;
+}
+ .pictures:hover {
+     transform: scale(1.05);
+}
+/* =======================Flag Icons======================= */
+ .flags {
+     display: flex;
+     gap: 10px;
+     justify-content: flex-end;
+     flex-shrink: 0;
+}
+ .flag {
+     width: 38px;
+     height: auto;
+     border-radius: 2px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+     transition: transform 0.2s ease;
+}
+ .flag:hover {
+     transform: scale(1.1);
+}
+/* =======================Responsive Design======================= */
+ @media (max-width: 768px) {
+     header, main, footer {
+         padding: 20px 5%;
+    }
+     .header-container {
+         gap: 15px;
+    }
+     .header_name {
+         font-size: 1.3rem;
+    }
+     nav {
+         gap: 10px;
+         justify-content: center;
+         flex-wrap: wrap;
+    }
+     nav a {
+         font-size: 0.9rem;
+         padding: 6px 12px;
+    }
+     .subtitle {
+         font-size: 1.5rem;
+    }
+     .text {
+         font-size: 1rem;
+         padding: 15px;
+    }
+     .image-text {
+         font-size: 1rem;
+         left: 50%;
+         transform: translate(-50%, -50%);
+    }
+     .logo {
+         width: 90px;
+    }
+     .flag {
+         width: 25px;
+    }
+     .homeIcon,.homeIcon2,.homeIcon3 {
+         position: static !important;
+         width: 150px;
+         display: block;
+         margin: 20px auto 0 auto;
+         top: auto !important;
+         left: auto !important;
+         right: auto !important;
+         transform: none !important;
+         z-index: auto !important;
+         margin-top: 40px !important;
+         margin-bottom: 5px;
+    }
+    /* Osnovni stil za sve tekstove */
+     .text,.text2,.contact-section .text,.thanks-section .text,.social-section .text,.working-hours,.subtitle,.subtitle2{
+         font-family: 'Roboto', sans-serif;
+         font-size: 1.1rem;
+         font-weight: 400;
+         line-height: 1.6;
+         color: #222;
+         text-align: left;
+         max-width: 900px;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 0 20px;
+    }
+    /* Naslovi ostaju centrirani */
+     .contact-section .subtitle,.thanks-section .subtitle,.social-section .subtitle {
+         text-align: center;
+    }
+     @media (max-width: 768px) {
+         .text,.text2 {
+             font-size: 1.4rem;
+             text-align: left;
+             margin-left: 14%;
+             margin-right: auto;
+             max-width: 300px;
+             display: block;
+             line-height: 1.4;
+        }
+         .subtitle,.subtitle2 {
+             font-size: 1rem;
+        }
+         .header_name {
+             font-size: 1.4rem;
+             text-align: center;
+             margin: 0 auto;
+             max-width: 280px;
+             display: block;
+             line-height: 1.3;
+        }
+    }
+     .subtitle,.subtitle2{
+         font-family: 'Poppins', sans-serif;
+         font-size: 2.5rem;
+         font-weight: 600;
+         color: #005bb5;
+         margin: 40px 0 40px 40px;
+         text-align: left;
+    }
+    /* Naslovi koji trebaju biti centrirani po dizajnu */
+     .contact-section .subtitle,.thanks-section .subtitle,.social-section .subtitle {
+         text-align: center;
+    }
+     .button-container {
+         text-align: center;
+         margin: 40px auto;
+    }
+     .navigation2,.navigation3 {
+         display: inline-block;
+         padding: 12px 25px;
+         font-size: 1.2rem;
+         font-weight: 600;
+         color: #005bb5;
+         background: transparent;
+         border: 2px solid #005bb5;
+         border-radius: 30px;
+         transition: all 0.3s ease;
+         cursor: pointer;
+         box-shadow: 0 2px 6px rgba(0, 91, 181, 0.2);
+         text-align: center;
+         margin: 10px auto;
+    }
+     .subtitle,.subtitle2,.contact-section .subtitle,.thanks-section .subtitle,.social-section .subtitle {
+         text-align: center !important;
+         margin-left: auto !important;
+         margin-right: auto !important;
+    }
+    /* Dodatno podešavanje za tekst preko slike */
+     .image-text {
+         left: 70%;
+         font-size: 1.2rem;
+         padding: 8px 15px;
+         text-align: left;
+    }
+     .working-hours {
+         margin-left: auto !important;
+         margin-right: auto !important;
+         text-align: center !important;
+         padding-left: 0 !important;
+         padding-right: 0 !important;
+    }
+     .working-hours li {
+         justify-content: center !important;
+         text-align: center !important;
+         padding-left: 0 !important;
+         padding-right: 0 !important;
+    }
+     .header {
+         align-self: center;
+    }
+     .header-container {
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+         text-align: center;
+    }
+     .logo-container {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         gap: 10px;
+    }
+     .logo {
+         width: 70px;
+    }
+     .header_name {
+         font-size: 1.5rem;
+         text-align: left;
+    }
+     nav {
+         justify-content: center;
+         flex-wrap: wrap;
+         gap: 8px;
+    }
+     .flags {
+         justify-content: center;
+         margin-top: 10px;
+    }
+     iframe,.map-iframe {
+         max-width: 90% !important;
+         margin: 20px auto !important;
+         display: block;
+         height: 250px !important;
+         overflow-x: hidden !important;
+    }
+     body, html {
+         height: 100%;
+         overflow-x: hidden;
+    }
+     .contact-section,.section2 {
+         max-width: 100% !important;
+         overflow-x: hidden !important;
+    }
+}
+/* =======================Navigation2 Button======================= */
+ .button-container {
+     margin: 20px 0;
+     text-align: left;
+     padding-left: 40px;
+}
+ .navigation2 {
+     display: inline-block;
+     padding: 12px 25px;
+     font-size: 1.1rem;
+     font-weight: 600;
+     color: #005bb5;
+     background: transparent;
+     border: 2px solid #005bb5;
+     border-radius: 30px;
+     transition: all 0.3s ease;
+     cursor: pointer;
+     box-shadow: 0 2px 6px rgba(0, 91, 181, 0.2);
+     margin-left: 0%;
+}
+ .navigation2:hover {
+     background: #005bb5;
+     color: #fff;
+     transform: scale(1.05);
+     box-shadow: 0 4px 12px rgba(0, 91, 181, 0.3);
+}
+ .navigation3 {
+     display: inline-block;
+     padding: 12px 25px;
+     font-size: 1.1rem;
+     font-weight: 600;
+     color: #005bb5;
+     background: transparent;
+     border: 2px solid #005bb5;
+     border-radius: 30px;
+     transition: all 0.3s ease;
+     cursor: pointer;
+     box-shadow: 0 2px 6px rgba(0, 91, 181, 0.2);
+     max-width: 300px;
+     text-align: center;
+     margin-left: auto;
+     margin-right: 44%;
+}
+ .navigation3:hover {
+     background: #005bb5;
+     color: #fff;
+     transform: scale(1.05);
+     box-shadow: 0 4px 12px rgba(0, 91, 181, 0.3);
+}
+/* =======================Page Icons======================= */
+ section {
+     position: relative;
+}
+ .homeIcon {
+     width: 250px;
+     height: auto;
+     position: absolute;
+     top: 75px;
+     right: 300px;
+     transition: transform 0.3s ease;
+     z-index: 10;
+}
+ .homeIcon:hover {
+     transform: scale(1.1);
+}
+ .homeIcon2 {
+     width: 250px;
+     height: auto;
+     position: absolute;
+     top: 75px;
+     left: 300px;
+     transition: transform 0.3s ease;
+     z-index: 10;
+}
+ .homeIcon2:hover {
+     transform: scale(1.1);
+}
+ .homeIcon3 {
+     width: 250px;
+     height: auto;
+     position: absolute;
+     top: 200px;
+     left: 300px;
+     transition: transform 0.3s ease;
+     z-index: 10;
+}
+ .homeIcon3:hover {
+     transform: scale(1.1);
+}
+/* =======================On-load Animation======================= */
+ @keyframes fadeInUp {
+     from {
+         opacity: 0;
+         transform: translateY(20px);
+    }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+    }
+}
+ .animate-on-load {
+     opacity: 0;
+     animation: fadeInUp 1s ease-out forwards;
+}
+ .map-iframe {
+     border-radius: 15px;
+     padding: 0.75em;
+     width: 100%;
+     max-width: 900px;
+     margin-left: auto;
+     margin-right: 25px;
+     background: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     display: block;
+}
+ .section2 {
+     background-color: #ffffff;
+     border-left: 6px solid #005bb5;
+     margin: 30px auto;
+     padding: 20px 40px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+     max-width: 1000px;
+     border-radius: 12px;
+     transition: transform 0.2s ease;
+}
+/* =======================Contact Section======================= */
+ .contact-section {
+     text-align: center;
+     padding: 40px 10%;
+     background-color: #f4f4f9;
+     margin: 40px auto;
+     max-width: 1200px;
+}
+ .contact-section .subtitle {
+     font-size: 2.5rem;
+     font-weight: 600;
+     color: #005bb5;
+     margin: 0 0 20px 0;
+     text-align: center;
+}
+ .contact-section .text {
+     font-size: 1.2rem;
+     line-height: 1.8;
+     color: #333;
+     max-width: 900px;
+     margin: 0 auto 30px;
+     text-align: center;
+}
+/* Stilovi za kontaktni obrazac */
+ .contact-form {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     max-width: 550px;
+     margin: 0 auto 30px;
+     padding: 20px;
+     background: #f8f9fa;
+     border-radius: 10px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+ .contact-form input {
+     padding: 12px;
+     border: 1px solid #e0e0e0;
+     border-radius: 5px;
+     font-size: 1rem;
+     font-family: 'Inter', sans-serif;
+     outline: none;
+     transition: border-color 0.3s ease;
+}
+ .contact-form input:focus {
+     border-color: #005bb5;
+     box-shadow: 0 0 5px rgba(0, 91, 181, 0.3);
+}
+ .contact-form button {
+     padding: 12px;
+     background-color: #005bb5;
+     color: #fff;
+     border: none;
+     border-radius: 25px;
+     font-size: 1.1rem;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background 0.3s ease, transform 0.2s ease;
+}
+ .contact-form button:hover {
+     background-color: #004d99;
+     transform: scale(1.05);
+}
+/* Stilovi za informacije s ikonama */
+ .contact-info {
+     display: flex;
+     justify-content: space-around;
+     max-width: 850px;
+     margin: 0 auto;
+     padding: 20px;
+     background: #f8f9fa;
+     border-radius: 20px;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+ .info-item {
+     text-align: center;
+     padding: 15px;
+}
+ .info-item .icon {
+     font-size: 2rem;
+     margin-bottom: 10px;
+     color: #005bb5;
+}
+ .info-item h3 {
+     font-size: 1.2rem;
+     font-weight: 600;
+     color: #005bb5;
+     margin-bottom: 10px;
+}
+ .info-item p {
+     font-size: 1rem;
+     color: #333;
+     line-height: 1.6;
+     font-family: 'Inter', sans-serif;
+}
+/* Responsive design za kontakt sekciju */
+ @media (max-width: 768px) {
+     .contact-section {
+         padding: 20px 5%;
+    }
+     .contact-form {
+         max-width: 100%;
+         padding: 15px;
+    }
+     .contact-info {
+         flex-direction: column;
+         gap: 20px;
+    }
+     .button-container {
+         text-align: center;
+        /* Center buttons */
+         padding-left: 0;
+        /* Remove left padding */
+    }
+     .navigation2 {
+         margin-left: auto;
+         margin-right: auto;
+    }
+     .navigation3 {
+         margin-left: auto;
+         margin-right: auto;
+    }
+}
+/* =======================Social Section======================= */
+ .social-section {
+     text-align: center;
+     padding: 40px 10%;
+     background-color: #f4f4f9;
+     margin: 40px auto;
+     max-width: 1200px;
+}
+ .social-section .subtitle {
+     font-size: 2.5rem;
+     font-weight: 600;
+     color: #005bb5;
+     margin: 0 0 20px 0;
+}
+ .social-section .text {
+     font-size: 1.2rem;
+     line-height: 1.8;
+     color: #333;
+     max-width: 900px;
+     margin: 0 auto 30px;
+}
+ .social-links {
+     display: flex;
+     gap: 15px;
+     justify-content: center;
+     margin: 20px 0;
+     flex-wrap: wrap;
+}
+ .social-links a {
+     display: flex;
+     align-items: center;
+     font-size: 1rem;
+     font-weight: 600;
+     color: #005bb5;
+     padding: 10px 15px;
+     border-radius: 25px;
+     background: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+ .social-links i {
+     margin-right: 8px;
+}
+ .social-links a:hover {
+     color: #fff;
+     transform: scale(1.05);
+}
+ .social-links a:nth-child(1):hover {
+     background: #1877f2;
+}
+ .social-links a:nth-child(2):hover {
+     background: #e1306c;
+}
+ .social-links a:nth-child(3):hover {
+     background: #0077b5;
+}
+ .social-links a:nth-child(4):hover {
+     background: #000000;
+}
+ .small-text {
+     font-size: 0.9rem;
+     color: #666;
+     margin-top: 10px;
+}
+/* =======================Thanks Section======================= */
+ .thanks-section {
+     text-align: center;
+     padding: 40px 10%;
+     background-color: #f4f4f9;
+     margin: 40px auto;
+     max-width: 1200px;
+}
+ .thanks-section .subtitle {
+     font-size: 2.5rem;
+     font-weight: 600;
+     color: #005bb5;
+     margin: 0 0 20px 0;
+}
+ .thanks-section .text {
+     font-size: 1.2rem;
+     line-height: 1.8;
+     color: #333;
+     max-width: 900px;
+     margin: 0 auto 30px;
+}
+/* =======================Image Container Bottom======================= */
+ .image-container-bottom {
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+     margin: 0 auto;
+}
+ .image-container-bottom img {
+     width: 100%;
+     height: 500px;
+     object-fit: cover;
+     display: block;
+     transition: transform 0.3s ease-out;
+}
+ .image-container-bottom img:hover {
+     transform: scale(1.05);
+}
+/* Specifično centriranje za naslove u social i thanks sekcijama */
+ .social-section .subtitle {
+     text-align: center;
+     font-size: 2.3rem 
+}
+ .social-section .text {
+     text-align: center;
+}
+ .thanks-section .subtitle {
+     text-align: center;
+}
+ .thanks-section .text {
+     text-align: center;
+}
+ @media (max-width: 768px) {
+     .thanks-section .text {
+         font-size: 1.4rem;
+         text-align: left;
+         margin-left: 6%;
+         margin-right: auto;
+         max-width: 300px;
+         display: block;
+         line-height: 1.4;
+    }
+     .social-section .subtitle {
+         font-size: 2.25rem 
+    }
+     .social-section .text {
+         font-size: 1.4rem;
+         text-align: left;
+         margin-left: 13%;
+         margin-right: auto;
+         max-width: 300px;
+         display: block;
+         line-height: 1.4;
+    }
+     .bottom-text {
+         font-size: 0.9rem 
+    }
+     .title {
+         text-align: left;
+    }
+     header {
+         position: sticky;
+         top: 0;
+         z-index: 1000;
+         background: #005bb5;
+    }
+}
+ .message {
+     font-size: 1.1rem;
+     margin-top: 15px;
+     padding: 10px;
+     border-radius: 5px;
+     text-align: center;
+     opacity: 0;
+     transition: opacity 0.5s ease;
+}
+ .message.show {
+     opacity: 1;
+}
+ .message {
+     margin-top: 10px;
+     padding: 10px;
+     border-radius: 4px;
+     text-align: center;
+}
+ .message:empty {
+     display: none;
+}
+ .message::before {
+     content: '';
+}
+ .message:not(:empty) {
+     background: #d4edda;
+     color: #155724;
+}
+ .message:not(:empty)[data-error] {
+     background: #f8d7da;
+     color: #721c24;
+}
+/* Stilovi za textarea u kontakt formi */
+ .contact-form textarea {
+     padding: 12px;
+     border: 1px solid #e0e0e0;
+     border-radius: 5px;
+     font-size: 1rem;
+     font-family: 'Inter', sans-serif;
+     outline: none;
+     transition: border-color 0.3s ease;
+     resize: vertical;
+    /* Omogućava samo vertikalno podešavanje veličine */
+     min-height: 100px;
+    /* Minimalna visina za bolju čitljivost */
+}
+ .contact-form textarea:focus {
+     border-color: #005bb5;
+     box-shadow: 0 0 5px rgba(0, 91, 181, 0.3);
+}
+/* Responsivnost za manje ekrane */
+ @media (max-width: 768px) {
+     .contact-form textarea {
+         padding: 10px;
+         font-size: 0.95rem;
+         min-height: 80px;
+    }
+}
+/* ============================= Responzivnost za mobilne ============================= */
+ @media (max-width: 768px) {
+     .privacy-popup {
+         padding-top: 80px;
+    }
+     .popup-content {
+         width: 95%;
+         padding: 20px;
+         max-width: 325px;
+    }
+     .popup-content h2 {
+         font-size: 1.4rem;
+         padding-bottom: 8px;
+    }
+     .popup-text {
+         font-size: 0.95rem;
+    }
+     #accept-privacy {
+         padding: 8px 16px;
+         font-size: 0.95rem;
+    }
+     #show-privacy {
+         font-size: 0.85rem;
+    }
+}
+/* ============================= Pop-up politike privatnosti ============================= */
+/* ============================= Pop-up politike privatnosti ============================= */
+ .privacy-popup {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.6);
+     display: none;
+     justify-content: center;
+     align-items: flex-start;
+     padding-top: 120px;
+     z-index: 10000;
+     overflow-y: auto;
+}
+ .popup-content {
+     background: #ffffff;
+     padding: 0 18px 25px 30px;
+     border-radius: 12px;
+     max-width: 540px;
+     width: 100%;
+     max-height: 75vh;
+     overflow-y: auto;
+     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+     animation: fadeIn 0.3s ease-in-out;
+     font-family: 'Open Sans', sans-serif;
+     line-height: 1.75;
+     color: #333;
+     text-align: left;
+     border: 1px solid #ddd;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+}
+ .popup-header {
+     position: sticky;
+     top: 0;
+     background: #ffffff;
+     z-index: 10002;
+     padding: 20px 0 15px 0;
+     margin-top: 15px;
+}
+ .popup-header:hover {
+     background: #ffffff;
+     box-shadow: none;
+}
+ .popup-content h2 {
+     font-size: 1.7rem;
+     color: #005bb5;
+     margin: 0;
+     font-weight: 700;
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-bottom: 2px solid #005bb5;
+}
+ .popup-content h2:hover {
+     background: none;
+     color: #005bb5;
+     box-shadow: none;
+}
+ .close-popup {
+     position: absolute;
+     top: 10px;
+     right: 20px;
+     background: none;
+     border: none;
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: #666;
+     cursor: pointer;
+     transition: color 0.3s ease;
+     z-index: 10003;
+}
+ .close-popup:hover {
+     color: #000;
+}
+ .popup-text {
+     white-space: pre-wrap;
+     font-size: 1rem;
+     color: #333;
+     margin-bottom: 25px;
+     line-height: 1.8;
+     padding-top: 10px;
+}
+ .privacy-buttons {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+}
+ #accept-privacy {
+     background: #005bb5;
+     color: #fff;
+     padding: 10px 24px;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 1rem;
+     font-weight: 600;
+     transition: background 0.3s, transform 0.2s;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+ #accept-privacy:hover {
+     background: #003d80;
+     transform: translateY(-2px);
+}
+ #show-privacy, #show-privacy-popup, #learn-more-privacy {
+     background: none;
+     border: none;
+     color: #005bb5;
+     text-decoration: underline;
+     cursor: pointer;
+     font-size: 0.95rem;
+     font-weight: 600;
+     transition: color 0.3s;
+}
+ #show-privacy:hover, #show-privacy-popup:hover, #learn-more-privacy:hover {
+     color: #003d80;
+}
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-20px);
+    }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+    }
+}
+ .popup-content::-webkit-scrollbar {
+     width: 8px;
+}
+ .popup-content::-webkit-scrollbar-track {
+     background: #f5f5f5;
+     border-radius: 12px;
+     margin: 12px 0;
+}
+ .popup-content::-webkit-scrollbar-thumb {
+     background-color: #ccc;
+     border-radius: 12px;
+     border: 2px solid #f5f5f5;
+}
+ .popup-content::-webkit-scrollbar-thumb:hover {
+     background-color: #999;
+}
+ @media (max-width: 600px) {
+     .popup-content {
+         max-width: 350px;
+         padding: 0 12px 20px 20px;
+         border-radius: 10px;
+         font-size: 0.95rem;
+    }
+     .popup-content h2 {
+         font-size: 1.4rem;
+         padding-top: 8px;
+         padding-bottom: 8px;
+    }
+     .popup-text {
+         font-size: 0.9rem;
+         line-height: 1.6;
+    }
+     .close-popup {
+         top: 8px;
+         right: 12px;
+         font-size: 1.3rem;
+    }
+     #accept-privacy, #show-privacy, #show-privacy-popup, #learn-more-privacy {
+         padding: 8px 20px;
+         font-size: 0.9rem;
+    }
+}
+/* Stilovi za cookieconsent pop-up */
+ .cc-window {
+     background: #ffffff;
+     padding: 20px;
+     border-radius: 12px;
+     max-width: 540px;
+     width: 90%;
+     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+     font-family: 'Open Sans', sans-serif;
+     line-height: 1.75;
+     color: #333;
+     border: 1px solid #ddd;
+     animation: fadeIn 0.3s ease-in-out;
+     position: fixed;
+     bottom: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 10000;
+}
+ .cc-message {
+     font-size: 1rem;
+     color: #333;
+     margin-bottom: 15px;
+}
+ .cc-compliance .cc-btn {
+     background: #005bb5;
+     color: #fff;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 8px;
+     font-size: 1rem;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background 0.3s ease, transform 0.2s ease;
+     margin: 0 5px;
+}
+ .cc-compliance .cc-btn.cc-allow:hover {
+     background: #003d80;
+     transform: translateY(-2px);
+}
+ .cc-compliance .cc-btn.cc-deny {
+     background: #666;
+}
+ .cc-compliance .cc-btn.cc-deny:hover {
+     background: #555;
+     transform: translateY(-2px);
+}
+ .cc-link {
+     color: #005bb5;
+     text-decoration: underline;
+     font-weight: 600;
+     transition: color 0.3s ease;
+}
+ .cc-link:hover {
+     color: #003d80;
+}
+/* Responsivnost za manje ekrane */
+ @media (max-width: 768px) {
+     .cc-window {
+         max-width: 325px;
+         padding: 15px;
+    }
+     .cc-message {
+         font-size: 0.95rem;
+    }
+     .cc-compliance .cc-btn {
+         padding: 8px 16px;
+         font-size: 0.95rem;
+    }
+     .cc-link {
+         font-size: 0.85rem;
+    }
+}
+/* Glavni popup kontejner */
+ .cookie-popup {
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     background-color: #ffffff;
+     color: #2c2c2c;
+     padding: 20px;
+     max-width: 360px;
+     width: 90%;
+     border: 1px solid #ccc;
+     border-radius: 12px;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+     z-index: 1000;
+     display: flex;
+     flex-direction: column;
+     animation: slideUp 0.4s ease-out;
+}
+/* Uklanjamo višak stilova iz unutrašnjeg diva */
+ .cookie-popup .popup-content {
+     background: none !important;
+     border: none !important;
+     padding: 0 !important;
+     box-shadow: none !important;
+     margin: 0 !important;
+     flex-direction: column;
+     display: flex;
+}
+/* Naslov */
+ .cookie-popup h2 {
+     font-size: 1.4rem;
+     margin: 0;
+     color: #005bb5;
+}
+/* Tekst */
+ .cookie-popup .popup-text {
+     font-size: 1rem;
+     line-height: 1.5;
+     margin-top: 15px;
+}
+/* Dugmad */
+ .cookie-buttons {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+}
+ .cookie-buttons button {
+     padding: 8px 16px;
+     border: none;
+     border-radius: 6px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+}
+/* Prihvati kolačiće */
+ #accept-cookies {
+     background-color: #005bb5;
+     color: white;
+}
+ #accept-cookies:hover {
+     background-color: #004a99;
+}
+/* Odbij kolačiće */
+ #reject-cookies {
+     background-color: #e0e0e0;
+     color: #333;
+}
+ #reject-cookies:hover {
+     background-color: #d0d0d0;
+}
+/* Zatvori dugme */
+ .close-popup {
+     position: absolute;
+     top: 8px;
+     right: 12px;
+     background: none;
+     border: none;
+     font-size: 1.3rem;
+     color: #999;
+     cursor: pointer;
+     transition: color 0.3s;
+}
+ .close-popup:hover {
+     color: #333;
+}
+/* Animacija */
+ @keyframes slideUp {
+     from {
+         transform: translateY(30px);
+         opacity: 0;
+    }
+     to {
+         transform: translateY(0);
+         opacity: 1;
+    }
+}
+ @media (max-width: 600px) {
+     .cookie-popup {
+         bottom: 15px;
+         right: 15px;
+         left: 15px;
+         max-width: unset;
+         width: auto;
+         padding: 16px;
+         font-size: 0.95rem;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+    }
+     .cookie-popup h2 {
+         font-size: 1.4rem;
+         text-align: center;
+    }
+     .cookie-popup p {
+         font-size: 0.95rem;
+    }
+     .cookie-popup button {
+         width: 100%;
+        /* Dugmad zauzimaju celu širinu */
+         margin-top: 10px;
+         font-size: 0.95rem;
+         padding: 8px;
+        /* Dodaj padding za bolju vidljivost */
+    }
+     .cookie-popup .cookie-buttons {
+         display: flex;
+         flex-direction: column;
+        /* Dugmad jedno ispod drugog */
+         gap: 10px;
+        /* Razmak između dugmadi */
+         width: 100%;
+        /* Osigurava da kontejner zauzima celu širinu */
+    }
+     .cookie-popup .close-popup {
+        /* Stil za "x" unutar .close-popup sa ID-jem */
+         position: absolute;
+         right: 150px;
+        /* Pomeranje "x" udesno */
+         top: 5.5%;
+         transform: translateY(-50%);
+        /* Vertikalno centriranje */
+         font-size: 1.1rem;
+         cursor: pointer;
+    }
+}
+ @media (max-width: 600px) {
+     header {
+         position: fixed !important;
+         top: 0;
+         left: 0;
+         width: 100vw;
+         z-index: 10000;
+         background: #005bb5;
+         box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+         padding: 16px 5%;
+    }
+     body {
+         padding-top: 70px;
+        /* prilagodi visini headera na telefonu */
+    }
+}
+ @media (max-width: 600px) {
+     .subtitle, .subtitle2 {
+         font-size: 1.5rem !important;
+         max-width: 95vw !important;
+         margin: 20px auto 20px auto !important;
+         text-align: center !important;
+         word-break: break-word !important;
+         overflow-wrap: break-word !important;
+         white-space: normal !important;
+         padding: 0 10px !important;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTBTVVJ29Z"></script>
+  <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        // Onemogući GA ako korisnik nije pristao na kolačiće
+        if (!localStorage.getItem('cookieConsent')) {
+            window['ga-disable-G-NTBTVVJ29Z'] = true;
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-NTBTVVJ29Z'); 
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="prijevodi, njemački, bosanski, kontakt, ovjereni prijevodi">
+  <meta name="description" content="Kontaktirajte Prevodilački ured Beširević za brze i pouzdane prijevode na njemački i bosanski jezik!">
+  <meta property="og:title" content="Kontaktirajte nas | Prevodilački ured Beširević">
+  <meta property="og:description" content="Brzi i pouzdani prijevodi na njemački i bosanski jezik. Kontaktirajte nas danas!">
+  <meta property="og:image" content="https://www.prevodilackiuredbesirevic.com/images/preview-image.jpg">
+  <meta property="og:url" content="https://www.prevodilackiuredbesirevic.com/kontakt.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kontaktirajte nas | Prevodilački ured Beširević">
+  <meta name="twitter:description" content="Brzi i pouzdani prijevodi na njemački i bosanski jezik. Kontaktirajte nas danas!">
+  <meta name="twitter:image" content="https://www.prevodilackiuredbesirevic.com/images/preview-image.jpg">
+  <meta name="twitter:site" content="@P_U_Besirevic_">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <title>Kontaktirajte nas | Prevodilački ured Beširević</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <script src="https://unpkg.com/i18next@23.11.5/dist/umd/i18next.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="icons/logo.png" alt="Logo Prevodilački ured Beširević" class="logo" data-i18n-alt="logo_alt">
+        <h2 class="header_name" data-i18n="headerName">Prevodilački ured Beširević</h2>
+      </div>
+      <nav>
+        <a href="index.html" class="navigation">Home</a> <a href="o_nama.html" class="navigation" data-i18n="title_navigation">O nama</a> <a href="usluge.html" class="navigation" data-i18n="title2_navigation">Usluge</a> <a href="kontakt.html" class="navigation" data-i18n="title3_navigation">Kontaktirajte nas</a>
+      </nav>
+      <div class="flags"><img src="flags/bosnia.png" alt="Bosanski jezik" class="flag" data-i18n-alt="bosnia_flag_alt"> <img src="flags/germany.png" alt="Njemački jezik" class="flag" data-i18n-alt="germany_flag_alt"></div>
+    </div>
+    <hr>
+  </header>
+  <div class="image-container-bottom"><img src="images/telephones.jpg" alt="Vintage telefoni na stolu" class="pictures" data-i18n-alt="telephones_alt"></div>
+  <div id="privacy-popup" class="privacy-popup" style="display: none;">
+    <div class="popup-content">
+      <button class="close-popup" aria-label="Zatvori prozor">×</button>
+      <h2 data-i18n="privacy_popup_title">Politika privatnosti</h2>
+      <div class="popup-text" data-i18n="privacy_popup_text"></div><button id="accept-privacy" data-i18n="accept_privacy_button">Prihvatam</button>
+    </div>
+  </div>
+  <div id="cookie-popup" class="cookie-popup" style="display: none;">
+    <div class="popup-content">
+      <button class="close-popup" aria-label="Zatvori prozor">×</button>
+      <h2 data-i18n="cookie_popup_title">Postavke kolačića</h2>
+      <div class="popup-text" data-i18n="cookie_popup_text">
+        Koristimo kolačiće kako bismo poboljšali vaše iskustvo na našoj stranici. Ovi kolačići uključuju analitičke kolačiće (npr. Google Analytics) za praćenje performansi stranice. Možete prihvatiti sve kolačiće ili odbiti neesencijalne. <a href="#" id="show-privacy-link">Pročitajte našu politiku privatnosti</a>.
+      </div>
+      <div class="cookie-buttons">
+        <button id="accept-cookies" data-i18n="accept_cookies_button">Prihvati sve</button> <button id="reject-cookies" data-i18n="reject_cookies_button">Odbij neesencijalne</button>
+      </div>
+    </div>
+  </div>
+  <section class="contact-section animate-on-load">
+    <h1 class="subtitle animate-on-load" data-i18n="title1_contact">Kontaktirajte nas</h1>
+    <p class="text animate-on-load" data-i18n="title1_text_contact">Imate li pitanja? Pošaljite nam poruku!</p>
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/movldljb" method="post" name="contactForm">
+      <label for="email" data-i18n="email_label">E-mail adresa</label> <input type="email" id="email" name="email" placeholder="Unesite validnu e-mail adresu" required=""> <label for="name" data-i18n="name_label">Vaše ime</label> <input type="text" id="name" name="name" placeholder="Unesite vaše ime" required=""> <label for="message" data-i18n="message_label">Poruka</label> 
+      <textarea id="message" name="message" placeholder="Unesite vašu poruku" rows="5" required=""></textarea> <label for="consent" class="checkbox-label"><input type="checkbox" id="consent" name="consent" required=""> <span data-i18n="consent_label">Slažem se s politikom privatnosti. <button type="button" id="show-privacy" data-i18n="learn_more">Saznajte više</button></span> <button type="button" id="show-privacy" data-i18n="learn_more">Saznajte više</button></label> <button type="submit" data-i18n="submitButton">Pošalji</button>
+    </form>
+    <section>
+      <div class="privacy-popup">
+        <div class="popup-content">
+          <h2>Politika privatnosti</h2><button class="close-popup">×</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="message" class="message"></div>
+      <div class="contact-info animate-on-load">
+        <div class="info-item animate-on-load">
+          <div class="icon animate-on-load">
+            📧
+          </div>
+          <h3 data-i18n="email_title">Email</h3><a id="email-link" href="#" data-i18n="email_text">Loading...</a>
+        </div>
+        <div class="info-item animate-on-load">
+          <div class="icon animate-on-load">
+            📞
+          </div>
+          <h3 data-i18n="title2_contact">Telefon</h3>
+          <p>+387 (61) 822-864</p>
+        </div>
+        <div class="info-item animate-on-load">
+          <div class="icon animate-on-load">
+            📍
+          </div>
+          <h3 data-i18n="title3_contact">Naša Kancelarija</h3>
+          <p>505. Viteške brdske brigade 18b<br>
+          77240 Bosanska Krupa<br>
+          Bosna i Hercegovina</p>
+        </div>
+      </div>
+    </section>
+    
+  </section>
+  <section class="social-section animate-on-load">
+      <h2 class="subtitle" data-i18n="title4_contact">Pronađite nas na društvenim mrežama</h2>
+      <p class="text" data-i18n="title4_text_contact">Pratite nas na društvenim mrežama kako biste bili u toku s našim najnovijim uslugama. Povežite se s nama i postanite dio naše zajednice.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61562016845518" target="_blank">Facebook</a> <a href="https://www.instagram.com/b_prijevodi/" target="_blank">Instagram</a> <a href="https://www.linkedin.com/in/prevodila%C4%8Dki-ured-be%C5%A1irevi%C4%87-a30053319/" target="_blank">LinkedIn</a> <a href="https://x.com/P_U_Besirevic_" target="_blank">X (Twitter)</a>
+      </div>
+    </section>
+    <section class="thanks-section animate-on-load">
+      <h2 class="subtitle" data-i18n="title5_contact">Hvala na iskazanom povjerenju!</h2>
+      <p class="text" data-i18n="title5_text_contact">Vaše povjerenje je naša motivacija. Kontaktirajte nas danas i otkrijte kako možemo unaprijediti vašu komunikaciju kroz vrhunske prijevode između njemačkog i bosanskog jezika.</p>
+    </section> 
+   <div class="image-container-bottom"><img src="images/team.jpg" alt="Tim Prevodilačkog ureda Beširević" class="pictures" data-i18n-alt="team_alt"></div>
+    <footer>
+      <hr>
+      <p class="bottom-text" data-i18n="footer">© 2025 Prevodilački ured Beširević. Sva prava pridržana.
+       <p>Kontakt: <a id="footer-email-link" href="#" data-i18n="[html]email_text">Loading...</a> | +387 (61) 822-864</p>
+      <button id="show-privacy" data-i18n="privacy_policy">Politika privatnosti</button></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
