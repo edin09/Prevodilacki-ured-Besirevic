@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoElement = document.querySelector('.logo');
     if (logoElement) {
         logoElement.addEventListener('click', () => {
-            window.location.href = 'index.html';
+            window.location.href = '/index.html';
         });
     } else {
         console.error("Element s klasom 'logo' nije pronađen.");
