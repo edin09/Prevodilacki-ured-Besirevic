@@ -39,23 +39,35 @@
   <script src="https://unpkg.com/i18next@23.11.5/dist/umd/i18next.min.js"></script>
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <div class="logo-container">
-        <img src="icons/logo.png" alt="Logo Prevodilački ured Beširević" class="logo" data-i18n-alt="logo_alt">
-        <h2 class="header_name" data-i18n="headerName">Prevodilački ured Beširević</h2>
-      </div>
-      <nav>
-        <a href="/" class="navigation">Home</a> <a href="/o_nama" class="navigation" data-i18n="title_navigation">O nama</a> <a href="/usluge" class="navigation" data-i18n="title2_navigation">Usluge</a> <a href="/kontakt" class="navigation" data-i18n="title3_navigation">Kontaktirajte nas</a>
+ <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="/icons/logo.png" alt="logoIcon" class="logo">
+                <h1 class="header_name" data-i18n="headerName">Prevodilački ured Beširević</h1>
+            </div>
 
-        <div class="flags">
+            <nav id="main-nav">
+
+                <button class="close-menu" id="close-menu" aria-label="Zatvori meni">×</button>
+
+                <a href="/" class="navigation">Home</a>
+                <a href="/o_nama" class="navigation" data-i18n="title_navigation">O nama</a>
+                <a href="/usluge" class="navigation" data-i18n="title2_navigation">Usluge</a>
+                <a href="/kontakt" class="navigation" data-i18n="title3_navigation">Kontaktirajte nas</a>
+               
+                <div class="flags">
                     <img src="/flags/bosnia.png" alt="BosniaFlag" class="flag">
                     <img src="/flags/germany.png" alt="GermanyFlag" class="flag_germany">
                 </div>
-      </nav>
-    </div>
-    <hr>
-  </header>
+            </nav>
+                <button class="hamburger" id="hamburger-menu" aria-label="Otvori meni">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        </div>
+        <hr>
+    </header>
   <div class="image-container-bottom"><img src="images/telephones.jpg" alt="Vintage telefoni na stolu" class="pictures" data-i18n-alt="telephones_alt"></div>
   <div id="privacy-popup" class="privacy-popup" style="display: none;">
     <div class="popup-content">
